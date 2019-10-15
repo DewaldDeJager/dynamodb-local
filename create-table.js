@@ -2,7 +2,7 @@ var params = {
     TableName: 'terms-and-conditions',
     KeySchema: [ // The type of of schema.  Must start with a HASH type, with an optional second RANGE.
         { // Required HASH type attribute
-            AttributeName: 'DigitalId',
+            AttributeName: 'DigitalID',
             KeyType: 'HASH',
         },
         { // Optional RANGE key type for HASH + RANGE tables
@@ -12,7 +12,7 @@ var params = {
     ],
     AttributeDefinitions: [ // The names and types of all primary and index key attributes only
         {
-            AttributeName: 'DigitalId',
+            AttributeName: 'DigitalID',
             AttributeType: 'S', // (S | N | B) for string, number, binary
         },
         {
